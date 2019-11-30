@@ -7,6 +7,7 @@ import { LoginComponent } from './userlayout/login/login.component';
 import { ProcessSelectionComponent } from './userlayout/process-selection/process-selection.component';
 import { from } from 'rxjs';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatCardModule,MatInputModule,MatButtonModule,MatCheckboxModule} from '@angular/material';
 
 
 const routes: Routes = [
@@ -18,14 +19,12 @@ const routes: Routes = [
     AppComponent,
     UserlayoutComponent,
     LoginComponent,
-    ProcessSelectionComponent,
-   
- 
-    
+    ProcessSelectionComponent
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot(routes),
+    MatCardModule,MatInputModule,MatButtonModule,MatCheckboxModule,
     BrowserAnimationsModule
   ],
   providers: [],

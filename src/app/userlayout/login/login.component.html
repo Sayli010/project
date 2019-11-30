@@ -1,32 +1,21 @@
 
-
-<form >
-    <div class="container">
-        <h1 style="color: blueviolet;margin-left: 150px; ">Login</h1>
-    
-        <label for="uname"><b>Extension</b></label>
-        <input type="text" placeholder="Enter extension" name="uname" required>
-      
-        <label for="psw"><b>Password</b></label>
-        <input type="password" placeholder="Enter Password" name="psw" required>
-      
-        <!-- <label for="psw"><b>Select Process</b></label>
-        <select (input) = checkProcess(process)>
-          <option value="select" >Select</option>
-          <option value="inbound" routerLink="inbound">Inbound</option>
-          <option value="outbound" routerLink="outbound">Outbound</option>
-        </select> -->
-        <label>
-          <input type="checkbox" checked="checked" name="remember"> Remember me
-        </label>    
-        <button type="submit"><a routerLink = 'process-selection'>Login</a></button>
-        
-      </div>
-  <!-- <app-process-selection></app-process-selection> -->
-  
-      
-      <!-- <div class="container" style="background-color:#f1f1f1">
-        <button type="button" class="cancelbtn">Cancel</button>
-        <span class="psw">Forgot <a href="#">password?</a></span>
-      </div> -->
-    </form> 
+    <mat-card class="example-card">
+      <mat-card-header>
+        <mat-card-title> Extension Login</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+          <form class="example-form">
+              <mat-form-field class="example-full-width">
+                <input matInput placeholder="Enter Extension Id" >
+              </mat-form-field>
+              <mat-form-field class="example-full-width">
+                  <input matInput placeholder="Enter Password" >
+              </mat-form-field>
+              <mat-checkbox>Remember Me!</mat-checkbox>
+            </form>
+      </mat-card-content>
+      <mat-card-actions>
+          <button mat-flat-button color="primary">Login</button>
+      </mat-card-actions>
+    </mat-card>
+   
