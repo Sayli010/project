@@ -9,7 +9,7 @@ input[type=text], input[type=password] ,select{
   }
   
   button {
-    background-color: rgb(84, 70, 105);
+    background-color: cornflowerblue;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
